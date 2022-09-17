@@ -28,6 +28,38 @@ public class Main {
 		message.getChars(0, 4, k, 0);
 		System.out.println(k);
 
+		// Belirtilen harf kaçýncý indexte onu gösterir.Ýlk bulduðunu verir ve bitirir
+		System.out.println(message.indexOf('T'));
+		System.out.println(message.indexOf('t'));
+
+		// Sondan aramaya baþlama
+		System.out.println(message.lastIndexOf('T'));
+
+		System.out.println("*******Diðer Ders********");
+
+		// Boþluklarý deðiþme; ilk girdi deðiþmek istenen ikincisi neyle deðiþeceði
+		System.out.println(message.replace(' ', '-'));
+
+		// Metnin içerisinden parça alma
+		System.out.println(message.substring(2));
+
+		// iki parça arasý metini bölme
+		System.out.println(message.substring(2, 5));
+
+		// metini dizi gibi gösterme
+		for (String word : message.split(" ")) {
+			System.out.println(word);
+		}
+
+		// metini küçük harfe çevirme
+		System.out.println(message.toLowerCase());
+
+		// metini büyük harfe çevirme
+		System.out.println(message.toUpperCase());
+
+		// metinin baþýna ve sonuna boþluk býrakma
+		System.out.println(message.trim());
+
 	}
 
 }
